@@ -5,7 +5,6 @@
 using namespace std;
 
 class Nodo{
-
     private:
         int data;
         Nodo* next;
@@ -23,7 +22,6 @@ class Nodo{
 };
 
 class Pila{
-
     private:
         int size;
         Nodo* head;
@@ -60,7 +58,7 @@ class Pila{
         void Pop()
         {
             if(isEmpty()){
-                cerr << "Errore: Pila vuota." << endl;
+                cerr << "Errore: La Pila è vuota." << endl;
                 exit(EXIT_FAILURE);
             }
             Nodo* tmp = head;
