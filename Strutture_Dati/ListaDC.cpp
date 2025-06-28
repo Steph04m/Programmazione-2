@@ -5,7 +5,6 @@
 using namespace std;
 
 class Nodo{
-
     private:
         int data;
         Nodo* next;
@@ -26,7 +25,6 @@ class Nodo{
 };
 
 class Lista{
-
     private:
         int size;
         Nodo* head;
@@ -114,6 +112,11 @@ class Lista{
 
         void printList()
         {
+            if(isEmpty()){
+                cerr << "Errore: La lista è vuota." << endl;
+                exit(EXIT_FAILURE);
+            }
+            
             Nodo* tmp = head;
             while(tmp != nullptr){
                 cout << tmp->getData() << " ";
