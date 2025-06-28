@@ -5,7 +5,6 @@
 using namespace std;
 
 class Nodo{
-
     private:
         int data;
         Nodo* next;
@@ -23,7 +22,6 @@ class Nodo{
 };
 
 class Coda{
-
     private:
         int size;
         Nodo* head;
